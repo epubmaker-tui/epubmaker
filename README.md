@@ -95,26 +95,26 @@ epubmaker 是一个命令行工具，读取项目目录里的 epub.ini 配置文
   每个 .html 文件是一章的正文，写纯 HTML 片段即可。
 
   正确写法：
-    <p>这是第一段。</p>
+   ```<p>这是第一段。</p>
     <p>这是第二段。</p>
     <h2>小节标题</h2>
     <p>更多内容。</p>
-    <img src="image.jpg" alt="图片说明"/>
+    <img src="image.jpg" alt="图片说明"/> ```
 
   错误写法（不要写这些）：
-    <!DOCTYPE html>
+  ```  <!DOCTYPE html>
     <html>
     <head><title>xx</title></head>
     <body>...</body>
-    </html>
+    </html> ```
 
-  epubmaker 会自动把你的内容包装进完整 XHTML 模板，包括 <html>、<head>、
-  <body> 标签和 EPUB 3.0 声明。
+ ``` epubmaker 会自动把你的内容包装进完整 XHTML 模板，包括 <html>、<head>、
+  <body> 标签和 EPUB 3.0 声明。```
 
   支持的标签：
-    <p> <h1>~<h6> <img> <a> <em> <strong> <code> <pre>
+  ```  <p> <h1>~<h6> <img> <a> <em> <strong> <code> <pre>
     <ul> <ol> <li> <br> <hr> <table>
-
+```
 ## 七、style.css 样式文件
   可选。放在项目目录。不提供则使用内置默认样式。
 
