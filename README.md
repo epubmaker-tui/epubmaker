@@ -31,10 +31,9 @@ epubmaker 是一个命令行工具，读取项目目录里的 epub.ini 配置文
 ## 三、安装（从源码编译）
   1. 把 epubmaker.cpp 和 init_epub.sh 放到同一目录
   2. 编译：
-     clang++ -std=c++17 -O2 -Wall -o epubmaker epubmaker.cpp
+     clang++ -std=c++17 -O2 -Wall -o epubmaker epubmaker.cpp (`clang++ -o epubmaker epubmaker.cpp`)
   3. 装到 PATH（可选）：
      cp epubmaker $PREFIX/bin/
-     cp init_epub.sh $PREFIX/bin/
 
   验证：
      epubmaker --help
