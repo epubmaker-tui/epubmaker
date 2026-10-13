@@ -84,7 +84,7 @@ epubmaker 是一个命令行工具，读取项目目录里的 epub.ini 配置文
       文件名 "01-地理与面积.html" → 章节标题 "地理与面积"
       规则：去 .html 后缀 → 去开头数字和连字符/下划线 → 剩余部分
 
-  ## 5.2 list = 手动列表（手动指定模式）
+## 5.2 list = 手动列表（手动指定模式）
     list = 01.html, 03.html, 02.html
 
     严格按你写的顺序打包。逗号后可有空格。适合跳章、重排、只选部分文件。
@@ -148,20 +148,12 @@ epubmaker 是一个命令行工具，读取项目目录里的 epub.ini 配置文
     │   ├── map.jpg
     │   └── flag.png
     └── cover.jpg
- 九、init_epub.sh 初始化脚本
-  用法：
-    bash init_epub.sh [项目目录] [书名] [作者] [语言]
 
   参数默认值：
     项目目录 = macau
     书名 = 澳门简介
     作者 = Anonymous
     语言 = zh
-
-  示例：
-    bash init_epub.sh
-    bash init_epub.sh mynovel "我的小说" "李四" "zh-CN"
-    bash init_epub.sh engbook "My Book" "John" "en"
 
   生成内容：
     epub.ini + style.css + 8 个示例章节 .html
