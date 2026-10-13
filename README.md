@@ -91,7 +91,7 @@ epubmaker 是一个命令行工具，读取项目目录里的 epub.ini 配置文
   每个 .html 文件是一章的正文，写纯 HTML 片段即可。
 
   正确写法：
-   ```<p>这是第一段。</p>
+   <p>这是第一段。</p>
     <p>这是第二段。</p>
     <h2>小节标题</h2>
     <p>更多内容。</p>
@@ -115,7 +115,7 @@ epubmaker 是一个命令行工具，读取项目目录里的 epub.ini 配置文
   可选。放在项目目录。不提供则使用内置默认样式。
 
   默认样式：
-    body { font-family: Georgia, serif; line-height: 1.8; margin: 1.5em; }
+   ``` body { font-family: Georgia, serif; line-height: 1.8; margin: 1.5em; }
     h1 { color: #334; font-size: 1.4em; }
     p { margin: .8em 0; }
     code { background: #eee; padding: 2px 6px; border-radius: 6px; }
@@ -124,11 +124,11 @@ epubmaker 是一个命令行工具，读取项目目录里的 epub.ini 配置文
   自定义示例：
     body { font-family: "Noto Serif", serif; line-height: 2; }
     h1 { color: #8b0000; border-bottom: 2px solid #8b0000; }
-    p { text-indent: 2em; }
+    p { text-indent: 2em; } ```
 
 ## 八、项目目录结构
   最小项目：
-    myproject/
+  ```  myproject/
     ├── epub.ini
     ├── 01-序.html
     └── 02-正文.html
@@ -143,7 +143,7 @@ epubmaker 是一个命令行工具，读取项目目录里的 epub.ini 配置文
     ├── images/
     │   ├── map.jpg
     │   └── flag.png
-    └── cover.jpg
+    └── cover.jpg ```
 
   参数默认值：
     项目目录 = macau
